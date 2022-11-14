@@ -13,6 +13,8 @@ public class Comparendo {
 
     private String fecha;
 
+    private String tcomparendo= "PONAL";
+
     private String dpto;
 
     private String municipio;
@@ -26,10 +28,11 @@ public class Comparendo {
     public Comparendo() {
     }
 
-    public Comparendo(Integer noComparendo, String infraccion, String fecha, String dpto, String municipio, Integer valor, Cliente cliente) {
+    public Comparendo(Integer noComparendo, String infraccion, String fecha, String tcomparendo, String dpto, String municipio, Integer valor, Cliente cliente) {
         NoComparendo = noComparendo;
         this.infraccion = infraccion;
         this.fecha = fecha;
+        this.tcomparendo = tcomparendo;
         this.dpto = dpto;
         this.municipio = municipio;
         this.valor = valor;
@@ -84,6 +87,14 @@ public class Comparendo {
         this.valor = valor;
     }
 
+    public String getTcomparendo() {
+        return tcomparendo;
+    }
+
+    public void setTcomparendo(String tcomparendo) {
+        this.tcomparendo = tcomparendo;
+    }
+
     @JsonIgnore
     public Cliente getCliente() {
         return cliente;
@@ -92,4 +103,5 @@ public class Comparendo {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
+
 }

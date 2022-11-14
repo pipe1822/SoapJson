@@ -24,7 +24,7 @@ public class BaseSimitApplication  {
 		Cliente pipe = new Cliente(1045707723,"Felipe","Becerra");
 		clienteRepository.save(pipe);
 
-		Comparendo comparendo1 = new Comparendo(1,"C02","12102022","ATLANTICO","BARRANQUILLA",250000,sebas);
+		Comparendo comparendo1 = new Comparendo(1,"C02","12102022","PONAL","ATLANTICO","BARRANQUILLA",250000,sebas);
 		comparendoRepository.save(comparendo1);
 
 
